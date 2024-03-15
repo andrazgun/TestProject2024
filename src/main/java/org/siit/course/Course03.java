@@ -139,7 +139,7 @@ public class Course03 {
                 countPrime++;
             }
                 else {
-                    System.out.println("Number " + i + " is even");
+                    System.out.println("Number " + i + " is not prime");
                 }
 
         }
