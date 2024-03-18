@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="013b0240-58a3-4154-bf42-aa438d72939f" name="Changes" comment="Course03 commit #1">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="013b0240-58a3-4154-bf42-aa438d72939f" name="Changes" comment="HomeWork03 - LeapYear.java">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/siit/course/Course04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/siit/course/CourseMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/siit/course/utils/MathFunctions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/siit/course/Course03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/siit/course/Course03.java" afterDir="false" />
     </list>
@@ -14,10 +16,17 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Course04" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,6 +36,12 @@
   }
 }</component>
   <component name="GithubPullRequestsUISettings">
+    <option name="recentNewPullRequestHead">
+      <RepoCoordinatesHolder>
+        <option name="owner" value="andrazgun" />
+        <option name="repository" value="TestProject2024" />
+      </RepoCoordinatesHolder>
+    </option>
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="9bac7695-2356-4ea3-9360-f9a8573d678b" />
@@ -49,14 +64,34 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Course03.executor": "Run",
+    "Application.Calculator.executor": "Run",
+    "Application.Course03.executor": "Debug",
+    "Application.CourseMain.executor": "Run",
+    "Application.Homework03.executor": "Run",
+    "Application.LeapYear.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "kotlin-language-version-configured": "true"
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.EditorConfig"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Course03">
+  <component name="RunManager" selected="Application.CourseMain">
+    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.siit.course.Calculator" />
+      <module name="TestProject2024" />
+      <option name="PROGRAM_PARAMETERS" value="4 4 4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.siit.course.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Course03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.siit.course.Course03" />
       <module name="TestProject2024" />
@@ -71,8 +106,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+    <configuration name="CourseMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.siit.course.CourseMain" />
       <module name="TestProject2024" />
       <extension name="coverage">
         <pattern>
@@ -84,14 +119,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LeapYear" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.siit.course.LeapYear" />
+      <module name="TestProject2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.siit.course.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Application.LeapYear" />
+      <item itemvalue="Application.Calculator" />
       <item itemvalue="Application.Course03" />
-      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.CourseMain" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CourseMain" />
         <item itemvalue="Application.Course03" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Calculator" />
+        <item itemvalue="Application.LeapYear" />
+        <item itemvalue="Application.LeapYear" />
       </list>
     </recent_temporary>
   </component>
@@ -107,6 +160,23 @@
       <option name="presentableId" value="Default" />
       <updated>1709740052306</updated>
     </task>
+    <task id="LOCAL-00001" summary="HomeWork03 - Calculator.java">
+      <option name="closed" value="true" />
+      <created>1710513950755</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710513950755</updated>
+    </task>
+    <task id="LOCAL-00002" summary="HomeWork03 - LeapYear.java">
+      <option name="closed" value="true" />
+      <created>1710665796043</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710665796043</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -120,15 +190,9 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/siit/course/Course03.java</url>
-          <line>102</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="HomeWork03 - Calculator.java" />
+    <MESSAGE value="HomeWork03 - LeapYear.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="HomeWork03 - LeapYear.java" />
   </component>
 </project>
