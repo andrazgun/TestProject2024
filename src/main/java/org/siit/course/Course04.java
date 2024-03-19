@@ -1,4 +1,10 @@
 package org.siit.course;
+
+import org.siit.course.utils.Circle;
+
+import java.awt.*;
+import java.util.Date;
+
 import static org.siit.course.utils.MathFunctions.*;
 import static org.siit.course.ComputeVolume.*;
 
@@ -86,6 +92,60 @@ public class Course04 {
         double minorRadius = 3;
         double majorRadius = 8;
         System.out.println("The volume for a torus with minor radius " + minorRadius + " and major radius " + majorRadius + " is " + computeVolume(minorRadius, majorRadius));
+
+//        Person p1 = new Person();
+//        Person p2 = new Person();
+//        p1.name = "Andrei";
+//        p2.name = "Silvia";
+//        System.out.println(p1.name);
+
+        Person p3 = new Person(
+                43,
+                'M',
+                "Andrei",
+                185,
+                80,
+                false,
+                new Date(1981, 9, 17)
+        );
+        p3.eat();
+
+        Shape s1 = new Shape();
+        s1.colorShape("blue");
+        System.out.println("The shape is " + s1.color);
+
+        Rectangle r1 = new Rectangle(10, 6);
+        r1.printRectangle();
+
+        Rectangle r2 = new Rectangle(3, 2);
+        r2.printRectangle();
+
+        Circle c1 = new Circle(5); // will call constructor with 1 arg
+        Circle c2 = new Circle(7); // will call constructor with 1 arg
+        Circle c3 = new Circle(); // will call default constructor
+        c1.printCircle();
+        c2.printCircle();
+        c3.printCircle();
+
+        CarBrands dacia = new CarBrands(
+                "Dacia",
+                new Date(1990, 9, 20),
+                "Renault",
+                "Pitesti",
+                p3
+        );
+        Car car1 = new Car(
+                dacia,
+                "Duster",
+                Color.RED,
+                "benzina",
+                true,
+                "123"
+        );
+        car1.accelerate();
+        car1.paintCar(Color.BLUE);
+        System.out.println("Car " + car1.model + " with brand " + car1.brand.name);
+
 
 
     }
