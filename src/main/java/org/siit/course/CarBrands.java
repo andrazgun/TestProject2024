@@ -1,5 +1,12 @@
 package org.siit.course;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.util.Date;
+
+@Getter @Setter @NoArgsConstructor @AllArgsConstructor
 
 public class CarBrands {
 
@@ -8,18 +15,6 @@ public class CarBrands {
     private String owner;
     private String contact;
     private Person ceo;
-
-    public CarBrands(String name, Date establishDate, String owner, String contact, Person ceo) {
-        this.name = name;
-        this.establishDate = establishDate;
-        this.owner = owner;
-        this.contact = contact;
-        this.ceo = ceo;
-    }
-
-    public CarBrands() {
-
-    }
 
     public String getName() {
         return this.name;
@@ -64,4 +59,6 @@ public class CarBrands {
     public void setCeo(Person ceo) {
         this.ceo = ceo;
     }
+
+
 }

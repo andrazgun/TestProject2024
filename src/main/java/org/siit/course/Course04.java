@@ -159,11 +159,12 @@ public class Course04 {
                 Color.RED,
                 "benzina",
                 true,
-                "123"
+                "123",
+                50f
         );
         car1.accelerate();
         car1.paintCar(Color.BLUE);
-        System.out.println("Car " + car1.model + " with brand " + car1.brand.getName());
+        System.out.println("Car " + car1.getModel() + " with brand " + car1.getBrand().getName());
 
 
 
