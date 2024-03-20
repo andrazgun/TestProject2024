@@ -5,17 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="013b0240-58a3-4154-bf42-aa438d72939f" name="Changes" comment="HomeWork04 - ComputeVolume.java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/siit/course/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/siit/course/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/siit/course/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/siit/course/CarBrands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/siit/course/Library.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/siit/course/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/siit/course/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/siit/course/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/siit/course/utils/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/siit/course/Course05.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/siit/course/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/siit/course/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/siit/course/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/siit/course/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/siit/course/Course04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/siit/course/Course04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/siit/course/CourseMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/siit/course/CourseMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/siit/course/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/siit/course/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/siit/course/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/siit/course/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,22 +65,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Calculator.executor": "Run",
-    "Application.Course03.executor": "Debug",
-    "Application.CourseMain.executor": "Run",
-    "Application.Homework03.executor": "Run",
-    "Application.LeapYear.executor": "Run",
-    "Application.Library.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "configurable.group.tools"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Calculator.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Course03.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.CourseMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Homework03.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LeapYear.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Library.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.CourseMain">
     <configuration name="Calculator" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="org.siit.course.Calculator" />

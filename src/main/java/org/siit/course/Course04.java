@@ -63,7 +63,7 @@ public class Course04 {
     private static void drawFullShape(int i) {
         drawFullShape(i, i);
     }
-    public static void runCourseCode4() {
+    public static void runCourseCode04() {
         int n = 123456;
         System.out.println("Number " + n + " is prime ? " + isPrimeNumber(n));
 
@@ -93,11 +93,30 @@ public class Course04 {
         double majorRadius = 8;
         System.out.println("The volume for a torus with minor radius " + minorRadius + " and major radius " + majorRadius + " is " + computeVolume(minorRadius, majorRadius));
 
-//        Person p1 = new Person();
-//        Person p2 = new Person();
-//        p1.name = "Andrei";
-//        p2.name = "Silvia";
-//        System.out.println(p1.name);
+        Person p1 = new Person(
+                45,
+                'F',
+                "Alice",
+                160,
+                45,
+                true,
+                1955
+        );
+        Person p2 = new Person(
+                68,
+                'M',
+                "Ion",
+                175,
+                86,
+                false,
+                1943
+        );
+        p1.printName(); //cal method before changing name
+        p2.printName(); //cal method before changing name
+        p1.setName("Ada");
+        p2.setName("Sorin");
+        p1.printName(); //cal method after changing name
+        p2.printName(); //cal method after changing name
 
         Person p3 = new Person(
                 43,
@@ -106,7 +125,7 @@ public class Course04 {
                 185,
                 80,
                 false,
-                new Date(1981, 9, 17)
+                1981
         );
         p3.eat();
 
@@ -144,7 +163,7 @@ public class Course04 {
         );
         car1.accelerate();
         car1.paintCar(Color.BLUE);
-        System.out.println("Car " + car1.model + " with brand " + car1.brand.name);
+        System.out.println("Car " + car1.model + " with brand " + car1.brand.getName());
 
 
 

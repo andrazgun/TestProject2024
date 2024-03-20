@@ -1,33 +1,34 @@
 package org.siit.course;
 
-import java.util.Date;
-
 public class Person {
 
-    public int age;
-    char sex;
-    String name;
-    int height;
-    int weight;
-    boolean isHungry;
-    Date birthday;
+    private int age;
+    private char sex;
+    private String name;
+    private int height;
+    private int weight;
+    private boolean isHungry;
+    private int year;
 
-    public Person(int age, char sex, String name, int height, int weight, boolean isHungry, Date birthday) {
+    public Person(int age,
+                  char sex,
+                  String name,
+                  int height,
+                  int weight,
+                  boolean isHungry,
+                  int year
+    ) {
         this.age = age;
         this.sex = sex;
         this.name = name;
         this.height = height;
         this.weight = weight;
         this.isHungry = isHungry;
-        this.birthday = birthday;
+        this.year = year;
     }
 
-    public void changeName(String newName) {
-        name = newName;
 
-    }
-
-    public void eat(){
+    public void eat() {
         if (!isHungry) {
             System.out.println("I am not hungry");
         } else {
@@ -35,5 +36,37 @@ public class Person {
             isHungry = false;
         }
     }
+    //    Getter
+    public String getName() {
+        return this.name;
+    }
+    //    Setter
+    public void setName(String newName) {
+        this.name = newName;
+    }
+    public void printName() {
+        System.out.println("Person's name is " + getName());
+    }
+//    Getter
+    public int getAge() {
+        return this.age;
+    }
+
+//    Setter
+    public void setAge(int newAge) {
+        this.age = newAge;
+    }
+    public void printAge() {
+        System.out.println("Age is " + getAge());
+    }
+
+    public char getSex() {
+        return sex;
+    }
+
+    public void setSex(char sex) {
+        this.sex = sex;
+    }
+
 
 }
