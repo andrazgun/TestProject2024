@@ -16,7 +16,9 @@ public class CarBrands {
     private String contact;
     private Person ceo;
 
-    public String getName() {
+//    commented below getters and setters because of
+//    lombok Getters, Setters and AllArgsConstructor import
+    /*public String getName() {
         return this.name;
     }
 
@@ -58,7 +60,7 @@ public class CarBrands {
 
     public void setCeo(Person ceo) {
         this.ceo = ceo;
-    }
+    }*/
 
 
 }

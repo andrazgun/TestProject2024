@@ -131,7 +131,7 @@ public class Course04 {
 
         Shape s1 = new Shape();
         s1.colorShape("blue");
-        System.out.println("The shape is " + s1.color);
+        System.out.println("The shape is " + s1.getColor());
 
         Rectangle r1 = new Rectangle(10, 6);
         r1.printRectangle();
@@ -160,16 +160,16 @@ public class Course04 {
                 "benzina",
                 true,
                 "123",
-                50f
+                0f,
+                100f,
+                (byte) 2,
+                true
         );
         car1.accelerate();
         car1.paintCar(Color.BLUE);
         System.out.println("Car " + car1.getModel() + " with brand " + car1.getBrand().getName());
 
 
-
     }
-
-
 
 }

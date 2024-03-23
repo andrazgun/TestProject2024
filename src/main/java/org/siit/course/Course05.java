@@ -1,5 +1,9 @@
 package org.siit.course;
 
+import java.awt.*;
+import java.util.Calendar;
+import java.util.Date;
+
 public class Course05 {
 
     public static void runCourseCode05 () {
@@ -24,6 +28,42 @@ public class Course05 {
 
         p1.setSex('F');
         System.out.println("Sex is " + p1.getSex());
+
+        CarBrands cb = new CarBrands(
+                "Suzuki",
+                new Date(1990, Calendar.FEBRUARY, 20),
+                "Andrei",
+                "No info",
+                p1
+        );
+        Car c1 = new Car(
+                cb,
+                "Vitara",
+                Color.BLUE,
+                "benzina",
+                true,
+                "Suz123",
+                0f,
+                100f,
+                (byte) 3,
+                true
+        );
+
+        c1.printCar();
+        c1.paintCar(Color.RED);
+        c1.printCar();
+        c1.accelerate(); //call method with default arg
+        c1.accelerate(5f); //call method with speedDelta arg
+        c1.printCar();
+        c1.gearUp();
+
+        System.out.println("-----------------");
+        Light l1 = new Light();
+        l1.dim(20);
+        l1.turnOn();
+        l1.brighten(1000f);
+        l1.turnOff();
+
 
 
 
