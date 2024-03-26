@@ -1,7 +1,5 @@
 package org.siit.course;
 
-import org.siit.course.utils.Circle;
-
 import java.awt.*;
 import java.util.Date;
 
@@ -130,7 +128,7 @@ public class Course04 {
         p3.eat();
 
         Shape s1 = new Shape();
-        s1.colorShape("blue");
+        s1.setColor("blue");
         System.out.println("The shape is " + s1.getColor());
 
         Rectangle r1 = new Rectangle(10, 6);
@@ -163,7 +161,8 @@ public class Course04 {
                 0f,
                 100f,
                 (byte) 2,
-                true
+                true,
+                90f
         );
         car1.accelerate();
         car1.paintCar(Color.BLUE);

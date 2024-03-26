@@ -1,5 +1,7 @@
 package org.siit.course;
 
+import org.siit.course.utils.GeneralUtils;
+
 import java.awt.*;
 import java.util.Calendar;
 import java.util.Date;
@@ -46,7 +48,8 @@ public class Course05 {
                 0f,
                 100f,
                 (byte) 3,
-                true
+                true,
+                45f
         );
 
         c1.printCar();
@@ -57,12 +60,40 @@ public class Course05 {
         c1.printCar();
         c1.gearUp();
 
+        System.out.println("STATIC METHOD CALL !");
+
+//        GeneralUtils.printCar(c1);
+
+        c1.turnLeft(540);
+
         System.out.println("-----------------");
         Light l1 = new Light();
         l1.dim(20);
         l1.turnOn();
         l1.brighten(1000f);
         l1.turnOff();
+
+        Shape s1 = new Shape("green", true);
+        Shape s2 = new Shape("red", false);
+        s1.draw();
+        s2.erase("shape");
+
+        Triangle t1 = new Triangle(10, 20, 30);
+        t1.setColor("yellow"); // set color via parent class Shape
+        t1.draw();
+        Triangle t2 = new Triangle( "blue", 10, 20, 30);
+        t2.draw();
+        t2.erase();
+
+        Circle circle1 = new Circle(5);
+        circle1.setColor("magenta");
+        circle1.erase("circle"); //call method from super class with param
+        circle1.erase(); //call method from super class without param
+
+
+
+
+
 
 
 

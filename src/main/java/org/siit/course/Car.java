@@ -3,6 +3,8 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.siit.course.utils.GeneralUtils;
+
 import java.awt.*;
 
 @Getter @Setter @NoArgsConstructor @AllArgsConstructor
@@ -12,6 +14,7 @@ public class Car {
     public final float ACC_STEP = 12; // it is constant, has only getter, not setter
     public final float MAX_SPEED = 240F;
     public final byte MAX_GEAR = 5;
+    public final float MAX_DIRECTION = 360;
 
     private CarBrands brand;
     private String model;
@@ -23,6 +26,8 @@ public class Car {
     private float fuelLevel;
     private byte gear;
     private boolean isStopped;
+    private float direction; // 0 degrees is North
+
 
 //    private method not accessible from outside the class
 //    method overloading, because this method is not in parent class CarBrands
@@ -52,7 +57,7 @@ public class Car {
         this.color = color;
     }
 
-    public void printCar(){
+    public void printCar(){ // object method
         System.out.println("-------------");
         System.out.println("Car model: " + this.model);
         System.out.println("Car brand: " + this.brand.getName());
@@ -60,6 +65,8 @@ public class Car {
         System.out.println("Car color: " + getColor());
         System.out.println("Current speed: " + getCurrentSpeed());
         System.out.println("Current gear: " + getGear());
+        System.out.println("Current direction: " + getDirection());
+//        GeneralUtils.printCar(this); // objects variables passed to class static method
     }
 
     public void startCar() {
@@ -91,6 +98,19 @@ public class Car {
         else {
             gear--;
         }
+    }
+
+    public void turnLeft(float angle) {
+        direction -= angle;
+        if (direction < 0) {
+            direction = MAX_DIRECTION + direction;
+        }
+    }
+
+    public void turnRight(float angle) {
+        direction += angle;
+        direction %= MAX_DIRECTION; // direction = direction % MAX_DIRECTION;
+
     }
 
 
