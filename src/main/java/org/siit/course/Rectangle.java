@@ -18,6 +18,14 @@ public class Rectangle extends Shape {
 //        this.height = height;
 //    }
 
+    public Rectangle(String color, boolean is3d, int height, int width) {
+        super(color, is3d);
+        this.height = height;
+        this.width = width;
+    }
+    public Rectangle (int l) {
+        height = l;
+    }
     public int computeArea() {
         return this.height * this.width;
     }
@@ -38,12 +46,6 @@ public class Rectangle extends Shape {
     //    method overriding method in Shape parent class using parent class constructor
     public void draw() {
         super.draw("rectangle");
-    }
-
-    public Rectangle(String color, boolean is3d, int height, int width) {
-        super(color, is3d);
-        this.height = height;
-        this.width = width;
     }
 
     public void erase() {

@@ -20,6 +20,9 @@ public class Course05 {
                 false,
                 1981
         );
+
+
+
         p1.printName(); //Alex --> call method before changing name
         p1.setName("Doru"); //call public setName method from Class Person
         p1.printName(); //Doru --> call method after changing name
@@ -90,9 +93,27 @@ public class Course05 {
         circle1.erase("circle"); //call method from super class with param
         circle1.erase(); //call method from super class without param
 
+        Square sq1 = new Square(5);
+        sq1.printRectangle();
+        sq1.draw();
+        sq1.draw("square");
 
-
-
+        Shape t3 = new Triangle("white", 17, 32, 64); // new object from
+        // super class Shape
+        // using method from subclass Triangle
+        t3.draw(); // call method from super class, overriding in subclass
+        Shape r2 = new Rectangle("white", false, 6, 7);
+        r2.draw();
+        Person p3 = new Person(
+                25,
+                'M',
+                "Otto",
+                165,
+                45,
+                false,
+                4,
+                new Shape("black", true)); // polymorphism
+        
 
 
 

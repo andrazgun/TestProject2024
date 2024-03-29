@@ -1,5 +1,12 @@
 package org.siit.course;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Setter @Getter @NoArgsConstructor @AllArgsConstructor
+
 public class Person {
 
     private int age;
@@ -9,6 +16,8 @@ public class Person {
     private int weight;
     private boolean isHungry;
     private int year;
+
+    private Shape favouriteShape;
 
     public Person(int age,
                   char sex,
