@@ -14,7 +14,7 @@ public class Book {
         this.price = price;
     }
 
-    public Book() {
+    public Book() { // default constructor
     }
 
     public String getName() {
@@ -30,5 +30,21 @@ public class Book {
     public int getYear() {
         return this.year;
     }
+
+    public void printBook() {
+        System.out.println("Book " + getName() + " " +
+                getPrice() + ", by " +
+                getAuthor().getName() + ", published in " +
+                getYear());
+    }
+
+    public void printAuthor() { //is void type because there is nothing to return
+        System.out.println("Author's name " +
+                getAuthor().getName() +
+                "\n" + "Author's email " +
+                getAuthor().getEmail());
+    }
+
+
 
 }

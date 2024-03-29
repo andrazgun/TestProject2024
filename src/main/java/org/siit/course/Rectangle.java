@@ -1,15 +1,31 @@
 package org.siit.course;
 
-public class Rectangle {
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-    int height;
-    int width;
+@Getter @Setter @NoArgsConstructor @AllArgsConstructor
 
-    public Rectangle(int width, int height) {
-        this.width = width;
+public class Rectangle extends Shape {
+
+    private int height;
+    private int width;
+
+    // constructor with 2 parameters
+//    public Rectangle(int width, int height) {
+//        this.width = width;
+//        this.height = height;
+//    }
+
+    public Rectangle(String color, boolean is3d, int height, int width) {
+        super(color, is3d);
         this.height = height;
+        this.width = width;
     }
-
+    public Rectangle (int l) {
+        height = l;
+    }
     public int computeArea() {
         return this.height * this.width;
     }
@@ -27,4 +43,12 @@ public class Rectangle {
         System.out.println("Perimeter: " + computePerimeter());
     }
 
+    //    method overriding method in Shape parent class using parent class constructor
+    public void draw() {
+        super.draw("rectangle");
+    }
+
+    public void erase() {
+        super.erase("rectangle");
+    }
 }

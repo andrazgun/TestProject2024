@@ -10,7 +10,7 @@ public class Author {
         this.email = email;
     }
 
-    public Author() {
+    public Author() { //default constructor
     }
 
     public String getName() {
