@@ -102,7 +102,7 @@ public class Course05 {
         // super class Shape
         // using method from subclass Triangle
         t3.draw(); // call method from super class, overriding in subclass
-        Shape r2 = new Rectangle("white", false, 6, 7);
+        Shape r2 = new Rectangle("white", false, 6, 7); // polymorphism
         r2.draw();
         Person p3 = new Person(
                 25,

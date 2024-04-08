@@ -7,7 +7,7 @@ import lombok.Setter;
 
 @Getter @Setter @NoArgsConstructor @AllArgsConstructor
 
-public class Shape {
+public class Shape implements IShape{
 
     private String color;
     private boolean is3d;
