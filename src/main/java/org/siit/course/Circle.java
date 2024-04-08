@@ -5,20 +5,26 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Getter @Setter @NoArgsConstructor @AllArgsConstructor
+@Getter @Setter @NoArgsConstructor
 public class Circle extends Shape {
 
     private int radius;
 
 //    constructor with 1 argument of type int
-//    public Circle(int radius) {
-//        this.radius = radius;
-//    }
+    public Circle(int radius) {
+        setRadius(radius); //use setRadius method which contain throw exception
+    }
 
 //    constructor with default arguments
 //    public Circle() {
 //    }
-
+//Setter method
+    public void setRadius(int radius) throws IllegalArgumentException {
+        if (radius < 0) {
+            throw new IllegalArgumentException("Radius " + radius + " cannot be negative");
+            }
+        this.radius = radius;
+    }
     public double getArea() {
         return Math.PI * Math.pow(radius, 2);
     }

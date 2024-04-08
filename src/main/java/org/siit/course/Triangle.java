@@ -11,11 +11,29 @@ public class Triangle extends Shape {
     private int l2;
     private int l3;
 
-    public Triangle(String color, boolean is3d, int l1, int l2, int l3) {
+    private boolean checkTriangle() { //method to check if triangle sides are correct
+        if (l1 > l2 + l3) {
+            return false;
+        }
+        if (l2 > l1 + l3) {
+            return false;
+        }
+        if (l3 > l1 + l2) {
+            return false;
+        }
+        return true;
+    }
+
+    public Triangle(String color, boolean is3d, int l1, int l2, int l3) throws CustomCourseException {
         super(color, is3d);
         this.l1 = l1;
         this.l2 = l2;
         this.l3 = l3;
+        if (!checkTriangle()) //if called method returns false
+        {
+            throw new CustomCourseException(l1, l2, l3, "Invalid triangle");
+        }
+
     }
 
     //    constructor which contains setter from parent class Shape with keyword super
