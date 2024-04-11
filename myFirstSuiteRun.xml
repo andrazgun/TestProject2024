@@ -11,6 +11,7 @@
             <class name="MyFirstTestNGTest"/>
         </classes>
     </test>
+
     <test name="Regression Tests">
         <groups>
             <run>
@@ -21,6 +22,7 @@
             <class name="MyFirstTestNGTest"/>
         </classes>
     </test>
+
     <test name="ClassActivity">
         <groups>
             <run>
@@ -28,7 +30,7 @@
             </run>
         </groups>
         <classes>
-            <class name="ClassActivityTest"/>
+            <class name="ClassActivityTestNGTest"/>
         </classes>
     </test>
 </suite>

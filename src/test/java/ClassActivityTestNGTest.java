@@ -1,6 +1,6 @@
 import org.testng.annotations.Test;
 
-public class ClassActivityTest {
+public class ClassActivityTestNGTest {
 
     @Test(
             groups = {"print"}
