@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="013b0240-58a3-4154-bf42-aa438d72939f" name="Changes" comment="Course08 - change path for mvn surfire">
-      <change afterPath="$PROJECT_DIR$/runSuiteWithParams.xml" afterDir="false" />
+    <list default="true" id="013b0240-58a3-4154-bf42-aa438d72939f" name="Changes" comment="Course08 - execute runSuiteWithParams.xml from command line">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/siit/course/NewMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/BrowserUtilities.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -74,6 +76,7 @@
     "Application.Homework03.executor": "Run",
     "Application.LeapYear.executor": "Run",
     "Application.Library.executor": "Run",
+    "Application.NewMain.executor": "Run",
     "JUnit.CalculatorTest.divisionTest.executor": "Run",
     "JUnit.CalculatorTest.executor": "Coverage",
     "JUnit.CalculatorTest.multiplicationTest.executor": "Run",
@@ -101,10 +104,20 @@
     "TestNG.MyFirstTestNGTest.getParamsFromCmd.executor": "Run",
     "TestNG.MyFirstTestNGTest.testMe.executor": "Run",
     "TestNG.MyFirstTestNGTest.verifyCalculatorTest.executor": "Run",
+    "TestNG.SeleniumTest.basicLoginTest (1).executor": "Run",
+    "TestNG.SeleniumTest.basicLoginTest.executor": "Debug",
+    "TestNG.SeleniumTest.basicRegisterTest.executor": "Run",
+    "TestNG.SeleniumTest.deliveryPlus.executor": "Run",
+    "TestNG.SeleniumTest.executor": "Run",
+    "TestNG.SeleniumTest.myFirstSeleniumTest.executor": "Run",
+    "TestNG.SeleniumTest.mySecondSeleniumTest.executor": "Run",
+    "TestNG.SeleniumTest.myThirdSeleniumTest.executor": "Run",
+    "TestNG.SeleniumTest.testExplicitWait.executor": "Run",
+    "TestNG.SeleniumTest.testExplicitWaitWithWaitMethod.executor": "Run",
     "git-widget-placeholder": "Course05",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/AndreiGunta/IdeaProjects/TestProject2024/src/test",
+    "last_opened_file_path": "C:/Users/AndreiGunta/eu-digital-test-automation",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -125,10 +138,23 @@
       <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.MyFirstTestNGTest.getParamsFromCmd (1)">
+  <component name="RunManager" selected="TestNG.SeleniumTest.basicRegisterTest">
     <configuration name="Library" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.siit.course.Library" />
       <module name="TestProject2024" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NewMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.siit.course.NewMain" />
+      <module name="TestProject2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.siit.course.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -143,43 +169,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/AndreiGunta/IdeaProjects/TestProject2024/myFirstSuiteRun.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestProject2024" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/myFirstSuiteRun.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClassActivityTestNGTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SeleniumTest.basicRegisterTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestProject2024" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ClassActivityTestNGTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyFirstTestNGTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestProject2024" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyFirstTestNGTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyFirstTestNGTest.getParamsFromCmd (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestProject2024" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyFirstTestNGTest" />
-      <option name="METHOD_NAME" value="getParamsFromCmd" />
+      <option name="MAIN_CLASS_NAME" value="SeleniumTest" />
+      <option name="METHOD_NAME" value="basicRegisterTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -187,34 +181,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyFirstTestNGTest.getParamsFromCmd" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SeleniumTest.myFirstSeleniumTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestProject2024" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyFirstTestNGTest" />
-      <option name="METHOD_NAME" value="getParamsFromCmd" />
-      <option name="GROUP_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SeleniumTest" />
+      <option name="METHOD_NAME" value="myFirstSeleniumTest" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-Dbrowser=&quot;chrome,edge&quot; -Denv=&quot;QA1,QA2&quot;" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyFirstTestNGTest.getParamsFromCmd" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SeleniumTest.testExplicitWait" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestProject2024" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyFirstTestNGTest" />
-      <option name="METHOD_NAME" value="getParamsFromCmd" />
+      <option name="MAIN_CLASS_NAME" value="SeleniumTest" />
+      <option name="METHOD_NAME" value="testExplicitWait" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeleniumTest.testExplicitWaitWithWaitMethod" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestProject2024" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SeleniumTest" />
+      <option name="METHOD_NAME" value="testExplicitWaitWithWaitMethod" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -224,20 +219,20 @@
     </configuration>
     <list>
       <item itemvalue="Application.Library" />
+      <item itemvalue="Application.NewMain" />
       <item itemvalue="JUnit.RunnAllTests" />
-      <item itemvalue="TestNG.C:/Users/AndreiGunta/IdeaProjects/TestProject2024/myFirstSuiteRun.xml" />
-      <item itemvalue="TestNG.ClassActivityTestNGTest" />
-      <item itemvalue="TestNG.MyFirstTestNGTest" />
-      <item itemvalue="TestNG.MyFirstTestNGTest.getParamsFromCmd (1)" />
-      <item itemvalue="TestNG.MyFirstTestNGTest.getParamsFromCmd" />
+      <item itemvalue="TestNG.SeleniumTest.basicRegisterTest" />
+      <item itemvalue="TestNG.SeleniumTest.testExplicitWaitWithWaitMethod" />
+      <item itemvalue="TestNG.SeleniumTest.myFirstSeleniumTest" />
+      <item itemvalue="TestNG.SeleniumTest.testExplicitWait" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.MyFirstTestNGTest.getParamsFromCmd (1)" />
-        <item itemvalue="TestNG.ClassActivityTestNGTest" />
-        <item itemvalue="TestNG.MyFirstTestNGTest" />
-        <item itemvalue="TestNG.C:/Users/AndreiGunta/IdeaProjects/TestProject2024/myFirstSuiteRun.xml" />
-        <item itemvalue="TestNG.MyFirstTestNGTest.getParamsFromCmd" />
+        <item itemvalue="TestNG.SeleniumTest.basicRegisterTest" />
+        <item itemvalue="Application.NewMain" />
+        <item itemvalue="TestNG.SeleniumTest.testExplicitWaitWithWaitMethod" />
+        <item itemvalue="TestNG.SeleniumTest.testExplicitWait" />
+        <item itemvalue="TestNG.SeleniumTest.myFirstSeleniumTest" />
       </list>
     </recent_temporary>
   </component>
@@ -325,7 +320,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712818338040</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Course08 - execute runSuiteWithParams.xml from command line">
+      <option name="closed" value="true" />
+      <created>1712821469084</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1712821469084</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -348,7 +351,8 @@
     <MESSAGE value="Update with Inheritance chapter" />
     <MESSAGE value="Course08 - Add TestNG Tests" />
     <MESSAGE value="Course08 - change path for mvn surfire" />
-    <option name="LAST_COMMIT_MESSAGE" value="Course08 - change path for mvn surfire" />
+    <MESSAGE value="Course08 - execute runSuiteWithParams.xml from command line" />
+    <option name="LAST_COMMIT_MESSAGE" value="Course08 - execute runSuiteWithParams.xml from command line" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
