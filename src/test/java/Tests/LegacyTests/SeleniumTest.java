@@ -1,4 +1,7 @@
-import Utils.BrowserUtilities;
+package Tests.LegacyTests;
+
+import Utils.GenericUtils;
+import Utils.SeleniumUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,8 +14,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import javax.sound.midi.Soundbank;
-import javax.swing.text.Utilities;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -108,10 +109,10 @@ public class SeleniumTest {
         WebElement addButton = driver.findElement(By.id("add_btn"));
         addButton.click();
 //        find element with method from Utilities
-        WebElement removeButton = BrowserUtilities.waitForGenericElement(driver, By.id("remove_btn"), Duration.ofSeconds(5));
+        WebElement removeButton = SeleniumUtils.waitForGenericElement(driver, By.id("remove_btn"), Duration.ofSeconds(5));
         removeButton.click();
 //        Assert with method from Utilities
-        BrowserUtilities.waitforTextOnSite(driver, By.id("confirmation"), Duration.ofSeconds(1), "Row 2 was removed");
+        SeleniumUtils.waitforTextOnSite(driver, By.id("confirmation"), Duration.ofSeconds(1), "Row 2 was removed");
         WebElement rowTwoConfirmation = driver.findElement(By.id("confirmation"));
         Assert.assertEquals(rowTwoConfirmation.getText(),"Row 2 was removed","Text assert pass");
         System.out.println(rowTwoConfirmation.isDisplayed()); //return true if element is displayed
@@ -144,12 +145,13 @@ public class SeleniumTest {
         return dp.iterator();
     }
 
-    @Test(dataProvider = "loginData", enabled = false)
+    @Test(dataProvider = "loginData", enabled = true)
     public void basicLoginTest(String username, String password, String infoMessage) throws InterruptedException {
         driver.manage().window().maximize();
         driver.get("https://practicetestautomation.com/practice-test-login/");
         System.out.println("Title is: " + driver.getTitle());
         System.out.println("URL is: " + driver.getCurrentUrl());
+
 //        Create an object of type WebElement By xPath
         WebElement pageTextXpath = driver.findElement(By.xpath("//*[@id=\"login\"]/h2")); // save the result in an element of WebElement type
         System.out.println("--------------------");
@@ -219,7 +221,7 @@ public class SeleniumTest {
         Thread.sleep(500); // not recommended as wait
     }
 
-    @Test
+    @Test (enabled = false)
     public void basicRegisterTest() {
         driver.navigate().to("https://practicetestautomation.com/practice-test-login/");
         driver.manage().window().maximize();
@@ -227,8 +229,8 @@ public class SeleniumTest {
         WebElement passwordInput = driver.findElement(By.id("password"));
         usernameInput.clear(); //clear username field before sendKeys()
         passwordInput.clear(); //clear password field before sendKeys()
-        usernameInput.sendKeys(BrowserUtilities.createRandomStringOne(5));
-        passwordInput.sendKeys(BrowserUtilities.createRandomStringTwo(5));
+        usernameInput.sendKeys(GenericUtils.createRandomStringOne(5));
+        passwordInput.sendKeys(GenericUtils.createRandomStringTwo(5));
         WebElement submitButton = driver.findElement(By.id("submit"));
         submitButton.click();
 

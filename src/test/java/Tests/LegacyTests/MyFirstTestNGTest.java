@@ -1,3 +1,5 @@
+package Tests.LegacyTests;
+
 import org.siit.course.Calc;
 import org.testng.Assert;
 import org.testng.annotations.*;

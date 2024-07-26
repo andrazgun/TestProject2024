@@ -4,12 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="013b0240-58a3-4154-bf42-aa438d72939f" name="Changes" comment="Course08 - execute runSuiteWithParams.xml from command line">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/siit/course/NewMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/BrowserUtilities.java" afterDir="false" />
+    <list default="true" id="013b0240-58a3-4154-bf42-aa438d72939f" name="Changes" comment="Course09 - Selenium 1 2">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/DemoApp/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/DemoApp/LoginPOMPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/DemoApp/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/myPCTM/AccountEditPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/myPCTM/AccountPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/myPCTM/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Resources/config2.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/DemoApp/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/DemoApp/LoginTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/DemoApp/RegistrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/myPCTM/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/myPCTM/CookiesTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/myPCTM/LoginTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/Browser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/BrowserTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/BrowserUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/ChromeBrowser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/ConfigUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/ConstantUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/EdgeBrowser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/FirefoxBrowser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/GenericUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myFirstSuiteRun.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myFirstSuiteRun.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runSuiteWithParams.xml" beforeDir="false" afterPath="$PROJECT_DIR$/runSuiteWithParams.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/LegacyTests/CalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ClassActivityTestNGTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/LegacyTests/ClassActivityTestNGTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Course07Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/LegacyTests/Course07Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MyFirstTestNGTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/LegacyTests/MyFirstTestNGTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SeleniumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/LegacyTests/SeleniumTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/BrowserUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/SeleniumUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +103,6 @@
     "Application.Homework03.executor": "Run",
     "Application.LeapYear.executor": "Run",
     "Application.Library.executor": "Run",
-    "Application.NewMain.executor": "Run",
     "JUnit.CalculatorTest.divisionTest.executor": "Run",
     "JUnit.CalculatorTest.executor": "Coverage",
     "JUnit.CalculatorTest.multiplicationTest.executor": "Run",
@@ -98,34 +124,42 @@
     "TestNG.C:/Users/AndreiGunta/IdeaProjects/TestProject2024/myFirstSuiteRun.xml.executor": "Run",
     "TestNG.ClassActivityTest.executor": "Run",
     "TestNG.ClassActivityTestNGTest.executor": "Run",
+    "TestNG.CookiesTests.cookieTest01.executor": "Run",
+    "TestNG.CookiesTests.cookieTest02.executor": "Run",
+    "TestNG.LoginTest.changeAccountDetailsTest.executor": "Run",
+    "TestNG.LoginTest.loginBasic.executor": "Run",
+    "TestNG.LoginTest.loginBasicTest.executor": "Run",
+    "TestNG.LoginTests.executor": "Run",
+    "TestNG.LoginTests.loginNegativePasswordTest.executor": "Debug",
+    "TestNG.LoginTests.loginNegativeUsername2POMTest.executor": "Run",
+    "TestNG.LoginTests.loginNegativeUsername2Test.executor": "Debug",
+    "TestNG.LoginTests.loginNegativeUsernameTest.executor": "Run",
+    "TestNG.LoginTests.loginPositive2Test.executor": "Run",
+    "TestNG.LoginTests.loginPositivePOMTest.executor": "Run",
+    "TestNG.LoginTests.loginPositiveTest.executor": "Run",
+    "TestNG.LoginTests.loginWithDataProviderTest.executor": "Run",
     "TestNG.MyFirstTestNGTest.divisionExceptionTest.executor": "Run",
     "TestNG.MyFirstTestNGTest.executor": "Run",
     "TestNG.MyFirstTestNGTest.getParamsFromCmd (1).executor": "Run",
     "TestNG.MyFirstTestNGTest.getParamsFromCmd.executor": "Run",
     "TestNG.MyFirstTestNGTest.testMe.executor": "Run",
     "TestNG.MyFirstTestNGTest.verifyCalculatorTest.executor": "Run",
-    "TestNG.SeleniumTest.basicLoginTest (1).executor": "Run",
-    "TestNG.SeleniumTest.basicLoginTest.executor": "Debug",
+    "TestNG.RegistrationTest.registrationTest.executor": "Run",
+    "TestNG.SeleniumTest.basicLoginTest.executor": "Run",
     "TestNG.SeleniumTest.basicRegisterTest.executor": "Run",
-    "TestNG.SeleniumTest.deliveryPlus.executor": "Run",
-    "TestNG.SeleniumTest.executor": "Run",
-    "TestNG.SeleniumTest.myFirstSeleniumTest.executor": "Run",
-    "TestNG.SeleniumTest.mySecondSeleniumTest.executor": "Run",
-    "TestNG.SeleniumTest.myThirdSeleniumTest.executor": "Run",
-    "TestNG.SeleniumTest.testExplicitWait.executor": "Run",
-    "TestNG.SeleniumTest.testExplicitWaitWithWaitMethod.executor": "Run",
     "git-widget-placeholder": "Course05",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/AndreiGunta/eu-digital-test-automation",
+    "last_opened_file_path": "C:/Users/AndreiGunta/IdeaProjects/TestProject2024/src/test",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "configurable.group.tools"
+    "settings.editor.selected.configurable": "editor.preferences.appearance"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\AndreiGunta\IdeaProjects\TestProject2024\src\test\java\Pages\" />
       <recent name="C:\Users\AndreiGunta\IdeaProjects\TestProject2024\src\main\java" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -138,23 +172,10 @@
       <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.SeleniumTest.basicRegisterTest">
+  <component name="RunManager" selected="TestNG.CookiesTests.cookieTest01">
     <configuration name="Library" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.siit.course.Library" />
       <module name="TestProject2024" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NewMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.siit.course.NewMain" />
-      <module name="TestProject2024" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.siit.course.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -169,11 +190,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeleniumTest.basicRegisterTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CookiesTests.cookieTest01" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestProject2024" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SeleniumTest" />
-      <option name="METHOD_NAME" value="basicRegisterTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.myPCTM.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.myPCTM" />
+      <option name="MAIN_CLASS_NAME" value="Tests.myPCTM.CookiesTests" />
+      <option name="METHOD_NAME" value="cookieTest01" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -181,11 +208,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeleniumTest.myFirstSeleniumTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CookiesTests.cookieTest02" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestProject2024" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SeleniumTest" />
-      <option name="METHOD_NAME" value="myFirstSeleniumTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.myPCTM.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.myPCTM" />
+      <option name="MAIN_CLASS_NAME" value="Tests.myPCTM.CookiesTests" />
+      <option name="METHOD_NAME" value="cookieTest02" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -193,11 +226,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeleniumTest.testExplicitWait" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.changeAccountDetailsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestProject2024" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SeleniumTest" />
-      <option name="METHOD_NAME" value="testExplicitWait" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.myPCTM.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.myPCTM" />
+      <option name="MAIN_CLASS_NAME" value="Tests.myPCTM.LoginTest" />
+      <option name="METHOD_NAME" value="changeAccountDetailsTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -205,11 +244,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeleniumTest.testExplicitWaitWithWaitMethod" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.loginBasic" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestProject2024" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SeleniumTest" />
-      <option name="METHOD_NAME" value="testExplicitWaitWithWaitMethod" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.myPCTM.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.myPCTM" />
+      <option name="MAIN_CLASS_NAME" value="Tests.myPCTM.LoginTest" />
+      <option name="METHOD_NAME" value="loginBasic" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.loginBasicTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestProject2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.myPCTM.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.myPCTM" />
+      <option name="MAIN_CLASS_NAME" value="Tests.myPCTM.LoginTest" />
+      <option name="METHOD_NAME" value="loginBasicTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -219,20 +282,20 @@
     </configuration>
     <list>
       <item itemvalue="Application.Library" />
-      <item itemvalue="Application.NewMain" />
       <item itemvalue="JUnit.RunnAllTests" />
-      <item itemvalue="TestNG.SeleniumTest.basicRegisterTest" />
-      <item itemvalue="TestNG.SeleniumTest.testExplicitWaitWithWaitMethod" />
-      <item itemvalue="TestNG.SeleniumTest.myFirstSeleniumTest" />
-      <item itemvalue="TestNG.SeleniumTest.testExplicitWait" />
+      <item itemvalue="TestNG.CookiesTests.cookieTest01" />
+      <item itemvalue="TestNG.CookiesTests.cookieTest02" />
+      <item itemvalue="TestNG.LoginTest.changeAccountDetailsTest" />
+      <item itemvalue="TestNG.LoginTest.loginBasic" />
+      <item itemvalue="TestNG.LoginTest.loginBasicTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SeleniumTest.basicRegisterTest" />
-        <item itemvalue="Application.NewMain" />
-        <item itemvalue="TestNG.SeleniumTest.testExplicitWaitWithWaitMethod" />
-        <item itemvalue="TestNG.SeleniumTest.testExplicitWait" />
-        <item itemvalue="TestNG.SeleniumTest.myFirstSeleniumTest" />
+        <item itemvalue="TestNG.CookiesTests.cookieTest01" />
+        <item itemvalue="TestNG.CookiesTests.cookieTest02" />
+        <item itemvalue="TestNG.LoginTest.loginBasicTest" />
+        <item itemvalue="TestNG.LoginTest.changeAccountDetailsTest" />
+        <item itemvalue="TestNG.LoginTest.loginBasic" />
       </list>
     </recent_temporary>
   </component>
@@ -320,15 +383,7 @@
       <option name="project" value="LOCAL" />
       <updated>1712818338040</updated>
     </task>
-    <task id="LOCAL-00010" summary="Course08 - execute runSuiteWithParams.xml from command line">
-      <option name="closed" value="true" />
-      <created>1712821469084</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1712821469084</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -351,8 +406,7 @@
     <MESSAGE value="Update with Inheritance chapter" />
     <MESSAGE value="Course08 - Add TestNG Tests" />
     <MESSAGE value="Course08 - change path for mvn surfire" />
-    <MESSAGE value="Course08 - execute runSuiteWithParams.xml from command line" />
-    <option name="LAST_COMMIT_MESSAGE" value="Course08 - execute runSuiteWithParams.xml from command line" />
+    <option name="LAST_COMMIT_MESSAGE" value="Course08 - change path for mvn surfire" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
