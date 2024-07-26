@@ -1,6 +1,7 @@
+package Tests.LegacyTests;
+
 import org.junit.*;
 import org.siit.course.Calc;
-import org.siit.course.Calculator;
 
 public class CalculatorTest {
 

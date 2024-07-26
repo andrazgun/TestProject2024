@@ -3,11 +3,11 @@
 <suite name="Suite example with params">
     <test thread-count="5" name="TestProject2024">
         <classes>
-            <class name="MyFirstTestNGTest">
+            <class name="Tests.LegacyTests.MyFirstTestNGTest">
                 <methods>
                     <include name="getParamsFromCmd"/>
                 </methods>
-            </class> <!-- MyFirstTestNGTest -->
+            </class> <!-- Tests.LegacyTests.MyFirstTestNGTest -->
         </classes>
     </test> <!-- TestProject2024 -->
 </suite> <!-- Default Suite -->

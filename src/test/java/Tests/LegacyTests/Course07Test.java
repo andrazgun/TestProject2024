@@ -1,3 +1,5 @@
+package Tests.LegacyTests;
+
 import org.junit.*;
 import org.siit.course.*;
 
