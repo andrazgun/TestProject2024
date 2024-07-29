@@ -11,9 +11,8 @@ public class BaseTest {
 
 
     public WebDriver driver;
-    String browser = BrowserUtils.getBrowserExternal("autoBrowser");
-//    String baseUrl = "https://practicetestautomation.com/";
-    String baseUrl = GenericUtils.createBaseUrl("src\\test\\java\\Resources\\config.properties");
+    String browser = GenericUtils.getBrowserFromConfig(ConstantUtils.CONFIG_FILE);
+    String baseUrl = GenericUtils.createBaseUrl(ConstantUtils.CONFIG_FILE);
 
     @BeforeTest
     public void beforeTest() {
