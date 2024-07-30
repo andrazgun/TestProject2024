@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="013b0240-58a3-4154-bf42-aa438d72939f" name="Changes" comment="Course11 - Selenium advanced">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/DemoApp/AlertPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/DemoApp/HoverPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/DemoApp/MainPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/DemoApp/AlertTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/DemoApp/HoverTests.java" afterDir="false" />
+    <list default="true" id="013b0240-58a3-4154-bf42-aa438d72939f" name="Changes" comment="Course 11 - Selenium advanced Alerts and Actions">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/DemoApp/CheckboxPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/DemoApp/CheckboxTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DemoApp/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DemoApp/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/DemoApp/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/DemoApp/MainPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +96,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.AlertTests.AlertTest01.executor": "Run",
     "TestNG.C:/Users/AndreiGunta/IdeaProjects/TestProject2024/myFirstSuiteRun.xml.executor": "Run",
+    "TestNG.CheckboxTests.CheckBoxTest01.executor": "Debug",
     "TestNG.ClassActivityTest.executor": "Run",
     "TestNG.ClassActivityTestNGTest.executor": "Run",
     "TestNG.CookiesTests.cookieTest01.executor": "Run",
@@ -144,23 +141,10 @@
       <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.HoverTests.HoverTest01">
+  <component name="RunManager" selected="TestNG.CheckboxTests.CheckBoxTest01">
     <configuration name="Library" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.siit.course.Library" />
       <module name="TestProject2024" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NewMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.siit.course.NewMain" />
-      <module name="TestProject2024" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.siit.course.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -186,6 +170,24 @@
       <option name="PACKAGE_NAME" value="Tests.DemoApp" />
       <option name="MAIN_CLASS_NAME" value="Tests.DemoApp.AlertTests" />
       <option name="METHOD_NAME" value="AlertTest01" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckboxTests.CheckBoxTest01" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestProject2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.DemoApp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.DemoApp" />
+      <option name="MAIN_CLASS_NAME" value="Tests.DemoApp.CheckboxTests" />
+      <option name="METHOD_NAME" value="CheckBoxTest01" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -243,20 +245,20 @@
     </configuration>
     <list>
       <item itemvalue="Application.Library" />
-      <item itemvalue="Application.NewMain" />
       <item itemvalue="JUnit.RunnAllTests" />
       <item itemvalue="TestNG.AlertTests.AlertTest01" />
+      <item itemvalue="TestNG.CheckboxTests.CheckBoxTest01" />
       <item itemvalue="TestNG.HoverTests.HoverTest01" />
       <item itemvalue="TestNG.CookiesTests.cookieTest01" />
       <item itemvalue="TestNG.SeleniumTest.basicRegisterTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CheckboxTests.CheckBoxTest01" />
         <item itemvalue="TestNG.HoverTests.HoverTest01" />
         <item itemvalue="TestNG.AlertTests.AlertTest01" />
         <item itemvalue="TestNG.CookiesTests.cookieTest01" />
         <item itemvalue="TestNG.SeleniumTest.basicRegisterTest" />
-        <item itemvalue="Application.NewMain" />
       </list>
     </recent_temporary>
   </component>
@@ -352,7 +354,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712821469084</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Course 11 - Selenium advanced Alerts and Actions">
+      <option name="closed" value="true" />
+      <created>1722265128098</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1722265128098</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -376,7 +386,8 @@
     <MESSAGE value="Course08 - Add TestNG Tests" />
     <MESSAGE value="Course08 - change path for mvn surfire" />
     <MESSAGE value="Course08 - execute runSuiteWithParams.xml from command line" />
-    <option name="LAST_COMMIT_MESSAGE" value="Course08 - execute runSuiteWithParams.xml from command line" />
+    <MESSAGE value="Course 11 - Selenium advanced Alerts and Actions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Course 11 - Selenium advanced Alerts and Actions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
