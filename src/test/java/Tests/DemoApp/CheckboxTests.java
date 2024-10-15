@@ -1,6 +1,7 @@
 package Tests.DemoApp;
 
 import Pages.DemoApp.CheckboxPage;
+import Tests.DataTests.BaseTest;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;

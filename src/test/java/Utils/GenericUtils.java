@@ -25,9 +25,15 @@ public class GenericUtils {
         return sb.toString();
     }
     public static String createRandomStringTwo(int stringLength) {
-        String rs = RandomStringUtils.randomAlphanumeric(stringLength);
-        System.out.println(rs);
-        return rs;
+        String randomString = RandomStringUtils.randomAlphanumeric(stringLength);
+        System.out.println(randomString);
+        return randomString;
+    }
+
+    public static String createRandomEmail(int stringLength) {
+        String randomEmail = RandomStringUtils.randomAlphanumeric(stringLength) + "@yopmail.com";
+        System.out.println(randomEmail);
+        return randomEmail;
     }
 
     public static String createBaseUrl (String configFile) { //url from config
@@ -88,6 +94,25 @@ public class GenericUtils {
             System.out.println("--> expires: " + c.getExpiry());
             System.out.println("---------------------------------");
         }
+    }
+    public static String getDBHostname(String configFile){
+        return ConfigUtils.getGenericValue(configFile, "dbHostname", "");
+    }
+
+    public static String getDBUser(String configFile){
+        return ConfigUtils.getGenericValue(configFile, "dbUser", "");
+    }
+
+    public static String getDBPassword(String configFile){
+        return ConfigUtils.getGenericValue(configFile, "dbPassword", "");
+    }
+
+    public static String getDBPort(String configFile){
+        return ConfigUtils.getGenericValue(configFile, "dbPort", "3306");
+    }
+
+    public static String getDBSchema(String configFile){
+        return ConfigUtils.getGenericValue(configFile, "dbSchema", "");
     }
 
 

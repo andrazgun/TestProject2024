@@ -1,11 +1,12 @@
 package Tests.DemoApp;
 
 import Pages.DemoApp.LoginPage;
+import Tests.DataTests.BaseTest;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class RegistrationTest extends BaseTest{
+public class RegistrationTest extends BaseTest {
 
 
     @Test

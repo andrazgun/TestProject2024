@@ -1,12 +1,15 @@
 package Pages.DemoApp;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.*;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import java.time.Duration;
 import java.util.List;
 
 //This is with Page Factory design pattern
-public class LoginPage {
+public class LoginPage extends BasePage{
 
 //    Find by XPath selector
     @FindBy(how = How.XPATH, using = "//*[@id=\"login\"]/h2")
@@ -59,6 +62,12 @@ public class LoginPage {
     @FindBy(how = How.CLASS_NAME, using = "post-title")
     private WebElement loginSuccess;
 
+    public LoginPage(WebDriver driver) {
+        super(driver);
+//        this.driver = driver;
+        wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+        PageFactory.initElements(driver, this);
+    }
 
     public void verifyPage() {
 //        Assert.assertEquals(pageTextXpath.getText(), "Test login");
@@ -89,10 +98,22 @@ public class LoginPage {
     public String getPasswordError() {
         return passwordError.getText();
     }
-
     public String getLoginSuccessMessage() {
         return loginSuccess.getText();
     }
-
+    public boolean checkErr(String expectedErr, String errorType) {
+        if (errorType.equalsIgnoreCase("userErr")) {
+            if (expectedErr.length() > 0) { // if text is displayed, execute if code block
+                System.out.println("Actual user error:" + usernameError.getText());
+                return expectedErr.equals(usernameError.getText());
+            } else return true;
+        } else if (errorType.equalsIgnoreCase("passErr")) {
+            if (expectedErr.length() > 0) {
+                System.out.println("Actual pass error:" + passwordError.getText());
+                return expectedErr.equalsIgnoreCase(passwordError.getText());
+            } else return true;
+        }
+        return false;
+    }
 
 }
