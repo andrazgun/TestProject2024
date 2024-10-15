@@ -1,6 +1,7 @@
 package Tests.DemoApp;
 
 import Pages.DemoApp.HoverPage;
+import Tests.DataTests.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import Pages.DemoApp.MainPage;

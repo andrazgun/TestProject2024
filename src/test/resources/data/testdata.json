@@ -1,0 +1,26 @@
+[
+  {
+    "account": {
+      "username": "incorrectUser",
+      "password": "Password123"
+    },
+    "userError": "Your username is invalid!",
+    "passwordError": ""
+  },
+  {
+    "account": {
+      "username": "student",
+      "password": "incorrectPassword"
+    },
+    "userError": "",
+    "passwordError": "Your password is invalid!"
+  },
+  {
+    "account": {
+      "username": "student",
+      "password": "Password123"
+    },
+    "userError": "Logged In Successfully",
+    "passwordError": "Congratulations student. You successfully logged in!"
+  }
+]

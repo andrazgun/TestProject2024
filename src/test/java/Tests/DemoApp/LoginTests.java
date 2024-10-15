@@ -2,6 +2,7 @@ package Tests.DemoApp;
 
 import Pages.DemoApp.LoginPOMPage;
 import Pages.DemoApp.LoginPage;
+import Tests.DataTests.BaseTest;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -11,7 +12,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 
-public class LoginTests extends BaseTest{
+public class LoginTests extends BaseTest {
 
     //Test with Page Factory with Asserts outside of Page Objects class
     @Test
