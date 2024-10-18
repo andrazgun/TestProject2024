@@ -17,6 +17,7 @@
         <testNGVersion>7.9.0</testNGVersion>
         <jUnitVersion>4.13.2</jUnitVersion>
         <lombokVersion>1.18.30</lombokVersion>
+        <extentVersion>5.1.2</extentVersion>
     </properties>
 
     <dependencies>
@@ -103,6 +104,12 @@
             <groupId>com.mysql</groupId>
             <artifactId>mysql-connector-j</artifactId>
             <version>9.0.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>${extentVersion}</version>
         </dependency>
 
 

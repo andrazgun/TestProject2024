@@ -38,15 +38,33 @@ public class SeleniumUtils {
         return false;
     }
 
-    public static void takeScreenshot(WebDriver driver) {
+    public static String takeScreenshot(WebDriver driver) {
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
-        System.out.println(timestamp.getTime()); //convert timestamp to long
         File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        String filename = ConstantUtils.SCREENSHOT_DIRECTORY + "screenshot_" + timestamp.getTime() +  ".png";
         try {
-            FileUtils.copyFile(screenshotFile, new File(ConstantUtils.SCREENSHOT_DIRECTORY + "screenshot_" + timestamp.getTime() + ".png"));
+            FileUtils.copyFile(screenshotFile,
+                    new File(filename));
         } catch (IOException e) {
-            System.out.println("File not saved");
+            System.out.println("File could not be saved on the disk!!");
         }
+        return filename;
+    }
+
+//    public static void takeScreenshot(WebDriver driver) {
+//        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+//        File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+//        try {
+//            FileUtils.copyFile(screenshotFile,
+//                    new File(ConstantUtils.SCREENSHOT_DIRECTORY + "screenshot_" + timestamp.getTime() +  ".png"));
+//        } catch (IOException e) {
+//            System.out.println("File could not be saved on the disk!!");
+//        }
+//    }
+
+    public static String getReportName () {
+        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+        return "extentReport_" + timestamp.getTime() + "html";
     }
 
 

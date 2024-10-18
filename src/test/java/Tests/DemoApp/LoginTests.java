@@ -3,20 +3,26 @@ package Tests.DemoApp;
 import Pages.DemoApp.LoginPOMPage;
 import Pages.DemoApp.LoginPage;
 import Tests.DataTests.BaseTest;
+import Utils.ExtentTestManager;
+import org.apache.xmlbeans.impl.xb.xsdschema.Group;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 
+
 public class LoginTests extends BaseTest {
 
     //Test with Page Factory with Asserts outside of Page Objects class
-    @Test
-    public void loginPositiveTest() {
+
+    @Test (groups = {"Smoke"})
+    public void loginPositiveTest(Method method) {
+        ExtentTestManager.startTest(method.getName(), "");
         driver.get(baseUrl + "practice-test-login/");
         LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
         loginPage.verifyPage(); //assert on page
@@ -65,7 +71,7 @@ public class LoginTests extends BaseTest {
     }
 
     //Test with Page Factory with Asserts outside of Page Objects class
-    @Test
+    @Test (groups = {"Smoke"})
     public void loginNegativeUsernameTest() {
         driver.get("https://practicetestautomation.com/practice-test-login/");
         LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class); //reflection
