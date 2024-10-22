@@ -3,15 +3,26 @@ package Tests.myPCTM;
 import Pages.myPCTM.AccountEditPage;
 import Pages.myPCTM.AccountPage;
 import Pages.myPCTM.LoginPage;
+import Utils.AllureTestListener;
 import Utils.GenericUtils;
+import io.qameta.allure.*;
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners({AllureTestListener.class})
+@Epic("Smoke Tests")
+@Feature("Login Tests")
 public class LoginTest extends BaseTest {
 
     //Test with Page Factory with Asserts outside of Page Objects class
-    @Test
+    @Test(description = "Login basic test",
+            priority = 0,
+            groups = {"Smoke"})
+    @Severity(SeverityLevel.CRITICAL)
+    @Owner("Andrei Gunta")
+
     public void loginBasicTest() {
         driver.get(baseUrl + "/index.php?route=account/login");
         LoginPage loginPage = new LoginPage(driver);

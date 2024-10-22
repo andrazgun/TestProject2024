@@ -100,7 +100,8 @@ public class LoginTests extends BaseTest {
     }
 
     //Test with Page Factory with Asserts outside of Page Objects class
-    @Test (enabled = true)
+    @Test (enabled = true,
+            groups = {"Smoke"})
     public void loginNegativePasswordTest() {
         driver.get("https://practicetestautomation.com/practice-test-login/");
         LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class); //reflection
