@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="013b0240-58a3-4154-bf42-aa438d72939f" name="Changes" comment="Course 12 - Test data - encoded MySQL password">
-      <change afterPath="$PROJECT_DIR$/runWithReports.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/ExtentManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/ExtentTestListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/ExtentTestManager.java" afterDir="false" />
+    <list default="true" id="013b0240-58a3-4154-bf42-aa438d72939f" name="Changes" comment="Course 13 - ExtentManager, ExtentTestManager, ExtentTestListener">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/AllureTestListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/allure.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myFirstSuiteRun.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myFirstSuiteRun.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DemoApp/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DemoApp/LoginTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/LegacyTests/MyFirstTestNGTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/LegacyTests/MyFirstTestNGTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/ConstantUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/ConstantUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/SeleniumUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/SeleniumUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/data/testdata.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/data/testdata.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/myPCTM/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/myPCTM/LoginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,83 +69,86 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Calc.executor": "Coverage",
-    "Application.Calculator.executor": "Run",
-    "Application.Course03.executor": "Debug",
-    "Application.CourseMain.executor": "Run",
-    "Application.Homework03.executor": "Run",
-    "Application.IframeTest.executor": "Run",
-    "Application.LeapYear.executor": "Run",
-    "Application.Library.executor": "Run",
-    "Application.NewMain.executor": "Run",
-    "JUnit.CalculatorTest.divisionTest.executor": "Run",
-    "JUnit.CalculatorTest.executor": "Coverage",
-    "JUnit.CalculatorTest.multiplicationTest.executor": "Run",
-    "JUnit.CalculatorTest.sqrtTest.executor": "Run",
-    "JUnit.Course07Test.checkCircleAreaTest.executor": "Run",
-    "JUnit.Course07Test.checkIfPersonIsHungryTest.executor": "Run",
-    "JUnit.Course07Test.computeRectangleAreaTest.executor": "Run",
-    "JUnit.Course07Test.executor": "Run",
-    "JUnit.RunnAllTests.executor": "Run",
-    "Maven.TestProject2024 [-Dbrowser=edge=].executor": "Run",
-    "Maven.TestProject2024 [clean,test].executor": "Run",
-    "Maven.TestProject2024 [clean].executor": "Run",
-    "Maven.TestProject2024 [compile].executor": "Run",
-    "Maven.TestProject2024 [dependency:tree].executor": "Run",
-    "Maven.TestProject2024 [test].executor": "Run",
-    "Maven.TestProject2024 [validate].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.AlertTests.AlertTest01.executor": "Run",
-    "TestNG.C:/Users/AndreiGunta/IdeaProjects/TestProject2024/myFirstSuiteRun.xml.executor": "Run",
-    "TestNG.C:/Users/AndreiGunta/IdeaProjects/TestProject2024/runWithReports.xml.executor": "Run",
-    "TestNG.CheckboxTests.CheckBoxTest01.executor": "Debug",
-    "TestNG.ClassActivityTest.executor": "Run",
-    "TestNG.ClassActivityTestNGTest.executor": "Run",
-    "TestNG.CookiesTests.cookieTest01.executor": "Run",
-    "TestNG.HoverTests.HoverTest01.executor": "Run",
-    "TestNG.LoginDataTests.executor": "Debug",
-    "TestNG.LoginDataTests.loginWithCSVTest.executor": "Run",
-    "TestNG.LoginDataTests.loginWithDBTest.executor": "Run",
-    "TestNG.LoginDataTests.loginWithJsonTest.executor": "Run",
-    "TestNG.LoginDataTests.loginWithXLSXTest.executor": "Run",
-    "TestNG.LoginDataTests.loginWithXMLTest.executor": "Debug",
-    "TestNG.LoginTests.loginNegativePasswordTest.executor": "Run",
-    "TestNG.LoginTests.loginNegativeUsername2POMTest.executor": "Run",
-    "TestNG.LoginTests.loginNegativeUsernameTest.executor": "Run",
-    "TestNG.LoginTests.loginPositivePOMTest.executor": "Run",
-    "TestNG.LoginTests.loginPositiveTest.executor": "Run",
-    "TestNG.MyFirstTestNGTest.divisionExceptionTest.executor": "Run",
-    "TestNG.MyFirstTestNGTest.executor": "Run",
-    "TestNG.MyFirstTestNGTest.getParamsFromCmd (1).executor": "Run",
-    "TestNG.MyFirstTestNGTest.getParamsFromCmd.executor": "Run",
-    "TestNG.MyFirstTestNGTest.myTest.executor": "Run",
-    "TestNG.MyFirstTestNGTest.testMe.executor": "Run",
-    "TestNG.MyFirstTestNGTest.verifyCalculatorTest.executor": "Run",
-    "TestNG.SeleniumTest.basicLoginTest (1).executor": "Run",
-    "TestNG.SeleniumTest.basicLoginTest.executor": "Debug",
-    "TestNG.SeleniumTest.basicRegisterTest.executor": "Run",
-    "TestNG.SeleniumTest.deliveryPlus.executor": "Run",
-    "TestNG.SeleniumTest.executor": "Run",
-    "TestNG.SeleniumTest.myFirstSeleniumTest.executor": "Run",
-    "TestNG.SeleniumTest.mySecondSeleniumTest.executor": "Run",
-    "TestNG.SeleniumTest.myThirdSeleniumTest.executor": "Run",
-    "TestNG.SeleniumTest.testExplicitWait.executor": "Run",
-    "TestNG.SeleniumTest.testExplicitWaitWithWaitMethod.executor": "Run",
-    "TestNG.Smoke.executor": "Run",
-    "git-widget-placeholder": "Course-11",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/AndreiGunta/IdeaProjects/TestProject2024",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "configurable.group.build"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Calc.executor&quot;: &quot;Coverage&quot;,
+    &quot;Application.Calculator.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Course03.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.CourseMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Homework03.executor&quot;: &quot;Run&quot;,
+    &quot;Application.IframeTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LeapYear.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Library.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NewMain.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CalculatorTest.divisionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CalculatorTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.CalculatorTest.multiplicationTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CalculatorTest.sqrtTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Course07Test.checkCircleAreaTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Course07Test.checkIfPersonIsHungryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Course07Test.computeRectangleAreaTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Course07Test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RunnAllTests.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.TestProject2024 [-Dbrowser=edge=].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.TestProject2024 [allure,report].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.TestProject2024 [clean,test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.TestProject2024 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.TestProject2024 [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.TestProject2024 [dependency:tree].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.TestProject2024 [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.TestProject2024 [validate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG.AlertTests.AlertTest01.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/AndreiGunta/IdeaProjects/TestProject2024/myFirstSuiteRun.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/AndreiGunta/IdeaProjects/TestProject2024/runWithReports.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CheckboxTests.CheckBoxTest01.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.ClassActivityTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ClassActivityTestNGTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CookiesTests.cookieTest01.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HoverTests.HoverTest01.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginDataTests.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.LoginDataTests.loginWithCSVTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginDataTests.loginWithDBTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginDataTests.loginWithJsonTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginDataTests.loginWithXLSXTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginDataTests.loginWithXMLTest.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.LoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.loginBasicTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTests.loginNegativePasswordTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTests.loginNegativeUsername2POMTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTests.loginNegativeUsernameTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTests.loginPositivePOMTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTests.loginPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MyFirstTestNGTest.divisionExceptionTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MyFirstTestNGTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MyFirstTestNGTest.getParamsFromCmd (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MyFirstTestNGTest.getParamsFromCmd.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MyFirstTestNGTest.myTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MyFirstTestNGTest.testMe.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MyFirstTestNGTest.verifyCalculatorTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SeleniumTest.basicLoginTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SeleniumTest.basicLoginTest.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.SeleniumTest.basicRegisterTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SeleniumTest.deliveryPlus.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SeleniumTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SeleniumTest.myFirstSeleniumTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SeleniumTest.mySecondSeleniumTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SeleniumTest.myThirdSeleniumTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SeleniumTest.testExplicitWait.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SeleniumTest.testExplicitWaitWithWaitMethod.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Smoke.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Course-11&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/AndreiGunta/IdeaProjects/TestProject2024&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\AndreiGunta\IdeaProjects\TestProject2024" />
@@ -175,6 +172,8 @@
       <command value="mvn clean test" />
       <command value="mvn dependency:tree" />
       <command value="mvn test" />
+      <command value="mvn allure report" />
+      <command value="allure generate" />
     </option>
   </component>
   <component name="RunManager" selected="TestNG.C:/Users/AndreiGunta/IdeaProjects/TestProject2024/runWithReports.xml">
@@ -215,28 +214,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginDataTests.loginWithDBTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestProject2024" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.DataTests.*" />
+          <option name="PATTERN" value="Tests.myPCTM.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="Tests.DataTests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.DataTests.LoginDataTests" />
-      <option name="METHOD_NAME" value="loginWithDBTest" />
-      <option name="GROUP_NAME" value="" />
+      <option name="PACKAGE_NAME" value="Tests.myPCTM" />
+      <option name="MAIN_CLASS_NAME" value="Tests.myPCTM.LoginTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.loginBasicTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestProject2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.myPCTM.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.myPCTM" />
+      <option name="MAIN_CLASS_NAME" value="Tests.myPCTM.LoginTest" />
+      <option name="METHOD_NAME" value="loginBasicTest" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -255,34 +261,6 @@
       <option name="MAIN_CLASS_NAME" value="Tests.DemoApp.LoginTests" />
       <option name="METHOD_NAME" value="loginPositiveTest" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyFirstTestNGTest.myTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestProject2024" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.LegacyTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="Tests.LegacyTests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.LegacyTests.MyFirstTestNGTest" />
-      <option name="METHOD_NAME" value="myTest" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -315,19 +293,19 @@
       <item itemvalue="Application.Library" />
       <item itemvalue="JUnit.RunnAllTests" />
       <item itemvalue="TestNG.Smoke" />
+      <item itemvalue="TestNG.LoginTest" />
+      <item itemvalue="TestNG.LoginTest.loginBasicTest" />
       <item itemvalue="TestNG.C:/Users/AndreiGunta/IdeaProjects/TestProject2024/runWithReports.xml" />
       <item itemvalue="TestNG.LoginTests.loginPositiveTest" />
       <item itemvalue="TestNG.C:/Users/AndreiGunta/IdeaProjects/TestProject2024/myFirstSuiteRun.xml" />
-      <item itemvalue="TestNG.MyFirstTestNGTest.myTest" />
-      <item itemvalue="TestNG.LoginDataTests.loginWithDBTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/AndreiGunta/IdeaProjects/TestProject2024/runWithReports.xml" />
+        <item itemvalue="TestNG.LoginTest.loginBasicTest" />
+        <item itemvalue="TestNG.LoginTest" />
         <item itemvalue="TestNG.LoginTests.loginPositiveTest" />
         <item itemvalue="TestNG.C:/Users/AndreiGunta/IdeaProjects/TestProject2024/myFirstSuiteRun.xml" />
-        <item itemvalue="TestNG.MyFirstTestNGTest.myTest" />
-        <item itemvalue="TestNG.LoginDataTests.loginWithDBTest" />
       </list>
     </recent_temporary>
   </component>
@@ -447,7 +425,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722406738405</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Course 13 - ExtentManager, ExtentTestManager, ExtentTestListener">
+      <option name="closed" value="true" />
+      <created>1729261723574</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1729261723574</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -474,7 +460,8 @@
     <MESSAGE value="Course 11 - Selenium advanced Alerts and Actions" />
     <MESSAGE value="Course 11 - Selenium advanced Checkboxes" />
     <MESSAGE value="Course 11 - Selenium advanced IframeTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Course 11 - Selenium advanced IframeTest" />
+    <MESSAGE value="Course 13 - ExtentManager, ExtentTestManager, ExtentTestListener" />
+    <option name="LAST_COMMIT_MESSAGE" value="Course 13 - ExtentManager, ExtentTestManager, ExtentTestListener" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
