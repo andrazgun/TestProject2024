@@ -20,6 +20,9 @@
         <extentVersion>5.1.2</extentVersion>
         <aspectJVersion>1.9.22.1</aspectJVersion>
         <allureVersion>2.29.0</allureVersion>
+        <restAssuredVersion>5.5.0</restAssuredVersion>
+        <slf4jVersion>2.0.16</slf4jVersion>
+
     </properties>
     <!-- Add allure-bom to dependency management to ensure correct versions of all the dependencies are used -->
     <dependencyManagement>
@@ -143,6 +146,23 @@
             <artifactId>allure-testng</artifactId>
             <version>${allureVersion}</version>
             <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>${restAssuredVersion}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4jVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4jVersion}</version>
         </dependency>
 
 

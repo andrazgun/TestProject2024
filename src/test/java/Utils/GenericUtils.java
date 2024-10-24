@@ -98,6 +98,9 @@ public class GenericUtils {
     public static String getDBHostname(String configFile){
         return ConfigUtils.getGenericValue(configFile, "dbHostname", "");
     }
+    public static String getapiVersion(String configFile){
+        return ConfigUtils.getGenericValue(configFile, "apiVersion", "");
+    }
 
     public static String getDBUser(String configFile){
         return ConfigUtils.getGenericValue(configFile, "dbUser", "");
